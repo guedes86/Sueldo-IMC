@@ -1,0 +1,229 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor-de-fundo:#F8F9FA;
+    --cor-principal:#007BFF;
+    --cor-secundario:#28A745;
+    --cor-destaque:#FFC107;
+    --cor-texto:#343A40;
+    --cor-error:#DC3545;
+    --font-principal:arial;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dark-mode {
+    background-color: var(--cor-texto);
+}
+
+/* Header */
+
+header{
+    background-color: #343A40;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 10px;
+    transition: 0.8s;
+    
+}
+
+.dark-mode header {
+
+    background-color: #000000;
+    
+}
+
+header #header_center{
+    background-color: #6d7680;
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    color: #F8F9FA;
+    height: 100px;
+    box-shadow: 1px 1px 5px #000000;
+    text-shadow: 1px 1px 2px #000000;
+    transition: 0.8s;
+}
+
+.dark-mode #header_center{
+    box-shadow: 0px 0px 10px #ffffff;
+    text-shadow: 0px 0px 10px #ffffff;
+}
+
+header button {
+    width: 60px;
+    height: 40px;
+    border: none;
+    font-weight: 900;
+    background-color: #343A40;
+    color: #F8F9FA;
+    box-shadow: 1px 1px 5px #343A40;
+    transition: 0.8s;
+}
+
+header button:hover{
+    background-color: #000000;
+    text-shadow: 0px 0px 10px white;
+}
+
+.reiniciar {
+    width: 70px;
+    height: 40px;
+    background-color: var(--cor-error);
+}
+
+/* Main */
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 50%;
+    justify-content: space-around;
+}
+
+
+
+/* Form IMC */
+
+#imc{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-principal);
+    color: var(--cor-de-fundo);
+    width: 400px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #343A40;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.dark-mode #imc{
+    background-color: black;
+    text-shadow: 0px 0px 10px #ffffff;
+}
+
+#imc input{
+
+    margin-left: 10px;
+    
+
+}
+
+#imc button{
+    border: none;
+    padding: 5px;
+    font-weight: bold;
+    background-color: var(--cor-destaque);
+    border-radius: 10px;
+    transition: 0.8s;
+}
+
+#imc button:hover{
+    background-color: #ffe083;
+    
+}
+
+/* Tabla dentro del IMC */
+
+table{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 300px;
+    background-color: white;
+    visibility: collapse;
+    color: black;
+    transition: 0.8s;
+
+}
+
+td , th {
+    border: 1px solid black;
+}
+
+th {
+    background-color: #fff800;
+    font-weight: bold;
+}
+
+
+td:hover{
+    background-color: rgba(128, 128, 128, 0.412);
+}
+
+
+.dark-mode #imc button{
+    background-color: #6d7680;
+    color: #F8F9FA;
+}
+
+
+
+
+/* Form sueldo */
+
+#sueldo{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-principal);
+    color: var(--cor-de-fundo);
+    width: 400px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #343A40;
+    text-shadow: 1px 1px 2px #000000;
+    
+}
+
+.dark-mode #sueldo{
+    background-color: black;
+    text-shadow: 0px 0px 10px #ffffff;
+}
+
+
+#sueldo input{
+
+    margin-left: 10px;
+    
+}
+
+#sueldo button{
+
+    border: none;
+    padding: 5px;
+    font-weight: bold;
+    background-color: var(--cor-destaque);
+    border-radius: 10px;
+    transition: 0.8s;
+
+}
+
+#sueldo button:hover{
+    background-color: #ffe083;
+}
+
+.dark-mode #sueldo button{
+    background-color: #6d7680;
+    color: #F8F9FA;
+}
+
+
+

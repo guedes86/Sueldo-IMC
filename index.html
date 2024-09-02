@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC + Sueldo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="header_center">
+            <h1>Calculadoras IMC + Sueldo</h1>
+            <button type="button" onclick="oscuro(),claro()"><p id="modo">Modo Oscuro</p></button>
+            <button onclick="apagar()" class="reiniciar">Reiniciar</button>
+        </div>
+    </header>
+    <main>
+            <form action="calcular_imc" id="imc">
+                <h2>Calculadora de IMC</h2>
+                <label for="num1imc">Altura: <input type="number" id="num1imc" required></label>
+                <label for="num2imc">Peso: <input type="number" id="num2imc"required></label>
+                <button type="button" onclick="calcularimc()">Calcular IMC</button>
+                <p id="resultadoimc"></p>
+
+                <table id="tabla">
+                    <tr id="titulo">
+                        <th>IMC</th>
+                        <th>Rango</th>
+                    </tr>
+                    <tr>
+                        <td>Menos de 18.5</td>
+                        <td>Peso inferior al normal</td>
+                    </tr>
+                    <tr>
+                        <td>18.5 - 24.9</td>
+                        <td>Normal</td>
+                    </tr>
+                    <tr>
+                        <td>25 - 29.9</td>
+                        <td>Sobrepeso</td>
+                    </tr>
+                    <tr>
+                        <td>30 o más</td>
+                        <td>Obesidad</td>
+                    </tr>
+                </table>
+
+            </form>
+            <form action="calcular_sueldo" id="sueldo">
+                <h2>Calculadora de Sueldo</h2>
+                <label for="num1sueldo">Horas trabajadas: <input type="number" id="num1sueldo" required></label>
+                <label for="num2sueldo">Valor por hora: <input type="number" id="num2sueldo" required></label>
+                <button type="button" onclick="calcularsueldo()">Calcular Sueldo</button>
+                <p id="resultadosueldo"></p>
+            </form>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
